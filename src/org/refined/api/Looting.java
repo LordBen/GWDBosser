@@ -6,9 +6,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.Hashtable;
 /**
- * 
  * @author LordBen
- *
  */
 public class Looting {
 
@@ -19,7 +17,6 @@ public class Looting {
     	Integer priceInTable = Pricetable.get(id);
     	if (priceInTable == null) {//If it's not in our table
 	        try {
-	    		System.out.println("Getting price from Tip.it");
 	            String price;
 	            final URL url = new URL("http://open.tip.it/json/ge_single_item?item=" + id);
 	            final URLConnection con = url.openConnection();
@@ -38,7 +35,6 @@ public class Looting {
 	        }
 	        return -1;
     	} else {
-    		System.out.println("Item is already in our table");
     		return Pricetable.get(id) * stackSize;//Gets price from our Hashtable * by amount
     	}
     }
