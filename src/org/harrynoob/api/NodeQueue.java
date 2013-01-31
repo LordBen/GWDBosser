@@ -3,11 +3,10 @@ package org.harrynoob.api;
 import java.util.LinkedList;
 
 import org.powerbot.core.script.job.LoopTask;
-import org.powerbot.core.script.job.state.Node;
 
 public class NodeQueue {
 
-	private LinkedList<Node> queue = new LinkedList<Node>();
+	private LinkedList<PriorityNode> queue = new LinkedList<PriorityNode>();
 	private int[] insertionPoints;
 	private boolean running;
 	
@@ -15,15 +14,15 @@ public class NodeQueue {
 		insertionPoints = new int[5];
 	}
 	
-	public void add(Node n, Priority p) {
+	public void add(PriorityNode n, Priority p) {
 		queue.add(insertionPoints[p.getId()], n);
 		insertionPoints[p.getId()]++;
 	}
 	
 	public void handle() {
 		if(queue.peek().activate()) {
-			queue.poll().execute();
-			queue.remove();
+			insertionPoints[queue.peek().getPriority().getId()]--;
+			queue.remove().execute();
 		}
 	}
 	
