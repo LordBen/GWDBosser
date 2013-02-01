@@ -1,13 +1,13 @@
-package sk.action.book.magic;
+package org.sk.action.book.magic;
 
 import org.powerbot.game.api.methods.Widgets;
 import org.powerbot.game.api.methods.tab.Skills;
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.Ability;
-import sk.general.Completion;
-import sk.tab.InnerAbilityTabs;
-import sk.tab.Tab;
+import org.sk.action.Ability;
+import org.sk.general.Completion;
+import org.sk.tab.InnerAbilityTabs;
+import org.sk.tab.Tab;
 
 /**
  * An enum with all the spells from all the spellbooks.

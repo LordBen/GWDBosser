@@ -1,11 +1,11 @@
-package sk.action.ability;
+package org.sk.action.ability;
 
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.Ability;
-import sk.general.Completion;
-import sk.tab.MainTabs;
-import sk.tab.Tab;
+import org.sk.action.Ability;
+import org.sk.general.Completion;
+import org.sk.tab.MainTabs;
+import org.sk.tab.Tab;
 
 public enum Prayer implements Ability {
 	;

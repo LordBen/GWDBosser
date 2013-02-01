@@ -1,4 +1,4 @@
-package sk.tab;
+package org.sk.tab;
 
 /**
  * Indicates a tab that can be opened

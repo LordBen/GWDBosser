@@ -1,4 +1,4 @@
-package sk.action.book.magic;
+package org.sk.action.book.magic;
 
 import org.powerbot.game.api.methods.Settings;
 

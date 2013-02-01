@@ -1,4 +1,4 @@
-package sk.action.book;
+package org.sk.action.book;
 
 /**
  * An enum of the type of ability (basic, threshold, ultimate)

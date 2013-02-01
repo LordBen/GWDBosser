@@ -1,11 +1,11 @@
-package sk.action.ability;
+package org.sk.action.ability;
 
 import org.powerbot.game.api.methods.Settings;
 import org.powerbot.game.api.methods.Widgets;
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.Ability;
-import sk.general.Completion;
+import org.sk.action.Ability;
+import org.sk.general.Completion;
 
 /**
  * Icons near the map in the top left part of the screen.

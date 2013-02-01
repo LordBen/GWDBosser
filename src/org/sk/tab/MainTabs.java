@@ -1,4 +1,4 @@
-package sk.tab;
+package org.sk.tab;
 
 import org.powerbot.game.api.methods.Tabs;
 

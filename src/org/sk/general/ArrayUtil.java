@@ -1,4 +1,4 @@
-package sk.general;
+package org.sk.general;
 
 public class ArrayUtil {
 	/**

@@ -1,4 +1,4 @@
-package sk.action.book.magic;
+package org.sk.action.book.magic;
 
 /**
  * An enum that has the possible types of runes

@@ -1,4 +1,4 @@
-package sk.action;
+package org.sk.action;
 
 import java.awt.event.KeyEvent;
 
@@ -12,13 +12,13 @@ import org.powerbot.game.api.util.Timer;
 import org.powerbot.game.api.wrappers.node.Item;
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.ability.Emote;
-import sk.action.ability.MapIcon;
-import sk.action.book.BookAbility;
-import sk.action.book.magic.Spell;
-import sk.general.Completion;
-import sk.general.TimedCondition;
-import sk.tab.MainTabs;
+import org.sk.action.ability.Emote;
+import org.sk.action.ability.MapIcon;
+import org.sk.action.book.BookAbility;
+import org.sk.action.book.magic.Spell;
+import org.sk.general.Completion;
+import org.sk.general.TimedCondition;
+import org.sk.tab.MainTabs;
 
 public class ActionBar {
 

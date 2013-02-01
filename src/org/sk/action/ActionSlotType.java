@@ -1,4 +1,4 @@
-package sk.action;
+package org.sk.action;
 
 /**
  * The type of the slot in the ActionBar

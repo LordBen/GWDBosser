@@ -1,4 +1,4 @@
-package sk.action.book.magic;
+package org.sk.action.book.magic;
 
 /**
  * Corresponds to a rune requirement that has an amount and a {@link RuneType}

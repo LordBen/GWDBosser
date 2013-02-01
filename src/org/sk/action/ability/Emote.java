@@ -1,4 +1,4 @@
-package sk.action.ability;
+package org.sk.action.ability;
 
 import java.util.Arrays;
 
@@ -7,10 +7,10 @@ import org.powerbot.game.api.methods.interactive.Players;
 import org.powerbot.game.api.wrappers.interactive.Player;
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.Ability;
-import sk.general.Completion;
-import sk.tab.MainTabs;
-import sk.tab.Tab;
+import org.sk.action.Ability;
+import org.sk.general.Completion;
+import org.sk.tab.MainTabs;
+import org.sk.tab.Tab;
 
 /**
  * The emotes in the emote tab stored as abilities.

@@ -1,4 +1,4 @@
-package sk.general;
+package org.sk.general;
 
 import org.powerbot.core.script.job.Task;
 import org.powerbot.game.api.util.Timer;

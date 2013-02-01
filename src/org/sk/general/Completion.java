@@ -1,4 +1,4 @@
-package sk.general;
+package org.sk.general;
 
 /**
  * An interface that checks to see if something is done

@@ -1,9 +1,9 @@
-package sk.action.book;
+package org.sk.action.book;
 
 import org.powerbot.game.api.methods.tab.Skills;
 
-import sk.tab.InnerAbilityTabs;
-import sk.tab.Tab;
+import org.sk.tab.InnerAbilityTabs;
+import org.sk.tab.Tab;
 
 /**
  * An enum of styles of ability. Corresponds to the skill requirement to use the ability

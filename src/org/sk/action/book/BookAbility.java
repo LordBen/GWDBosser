@@ -1,13 +1,13 @@
-package sk.action.book;
+package org.sk.action.book;
 
 import org.powerbot.game.api.methods.Widgets;
 import org.powerbot.game.api.methods.tab.Skills;
 import org.powerbot.game.api.wrappers.widget.WidgetChild;
 
-import sk.action.Ability;
-import sk.action.ActionBar;
-import sk.general.Completion;
-import sk.tab.Tab;
+import org.sk.action.Ability;
+import org.sk.action.ActionBar;
+import org.sk.general.Completion;
+import org.sk.tab.Tab;
 
 /**
  * An enum of all abilities found in the ability book that are not spells
