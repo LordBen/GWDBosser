@@ -15,15 +15,25 @@ public class NodeQueue {
 	}
 	
 	public void add(PriorityNode n, Priority p) {
-		queue.add(insertionPoints[p.getId()], n);
+		queue.add(getInsertionPoint(p.getId()), n);
 		insertionPoints[p.getId()]++;
 	}
 	
 	public void handle() {
-		if(queue.peek().activate()) {
-			insertionPoints[queue.peek().getPriority().getId()]--;
-			queue.remove().execute();
+		if(!queue.isEmpty()) {
+			if(queue.peek().activate()) {
+				insertionPoints[queue.peek().getPriority().getId()]--;
+				queue.remove().execute();
+			}
 		}
+	}
+	
+	private int getInsertionPoint(int id) {
+		int temp = 0;
+		for(int i = 0; i < id; i++) {
+			temp += insertionPoints[i];
+		}
+		return temp;
 	}
 	
 	public void stop() {
@@ -33,6 +43,7 @@ public class NodeQueue {
 	public boolean isHandling() {
 		return running;
 	}
+	
 	
 }
 
