@@ -1,5 +1,8 @@
 package org.refined.api;
 
+import org.powerbot.game.api.methods.tab.Inventory;
+import org.powerbot.game.api.methods.tab.Skills;
+
 /**
  * @author LordBen
  */
@@ -28,6 +31,24 @@ public enum Potions {
 	 */
 	public int[] getAltar() {
 		return itemId;
+	}
+	
+	/**
+	 * Drinks a certain type of potion
+	 * 
+	 * @param skill_id - skill id of the skill that will be boosted.
+	 * @param difference - the difference in current level and real level that the pot will drink at.
+	 * 
+	 * @return true if the potion was interacted with, otherwise false.
+	 */
+	public boolean drinkPotion(final int skillId, final int difference) {
+		if (Inventory.contains(itemId)) {
+			if (Skills.getLevel(skillId) - Skills.getRealLevel(skillId) <= difference) {
+				Inventory.getItem(itemId).getWidgetChild().interact("Drink");
+				return true;
+			}
+		}
+		return false;
 	}
 }
 
